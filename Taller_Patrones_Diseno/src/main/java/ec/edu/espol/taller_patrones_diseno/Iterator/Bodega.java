@@ -21,12 +21,12 @@ public class Bodega implements Inventario {
     }
 
     public void agregarProducto(Producto producto){
-        productos.add(producto);
+        items.add(producto);
     }
 
     @Override
     public Iterator crearIterador(){
-        return new InventarioIterator(productos);
+        return new InventarioIterator(items);
 
 
     }

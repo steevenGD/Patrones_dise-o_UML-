@@ -27,8 +27,8 @@ public class InventarioIterator implements Iterator{
     @Override
     public Producto getNext(){
         if(hasMore()){
-            Producto producto = producto.get(posicion);
-            posicion++
+            Producto producto = items.get(posicion);
+            posicion++;
             return producto;
         }
         return null;
